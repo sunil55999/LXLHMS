@@ -1,10 +1,5 @@
 [phases.setup]
-nixPkgs = ["php", "php81Packages.composer", "mysql"]
-
-[phases.build]
-cmds = [
-  "composer install" # Install dependencies (if you use Composer)
-]
+nixPkgs = ["php", "mysql"]
 
 [start]
 cmd = "php -S 0.0.0.0:8000 -t hospital" # Change 'hospital' to your actual public directory
